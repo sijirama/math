@@ -1,25 +1,25 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
+//import { useNavigate } from "react-router-dom";
 import Card from "./Card.tsx";
 
 const Login: React.FC = () => {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const checkUserStatus = async () => {
-      try {
-        const res = await fetch("/api/v1/user/me", {
-          credentials: "include",
-        });
-        if (res.ok) {
-          navigate("/secure"); // Redirect to secure page if logged in
-        }
-      } catch (err) {
-        console.error("User not logged in:", err);
-      }
-    };
-    checkUserStatus();
-  }, [navigate]);
+  //const navigate = useNavigate();
+  //
+  //useEffect(() => {
+  //  const checkUserStatus = async () => {
+  //    try {
+  //      const res = await fetch("/api/v1/user/me", {
+  //        credentials: "include",
+  //      });
+  //      if (res.ok) {
+  //        navigate("/secure"); // Redirect to secure page if logged in
+  //      }
+  //    } catch (err) {
+  //      console.error("User not logged in:", err);
+  //    }
+  //  };
+  //  checkUserStatus();
+  //}, [navigate]);
 
   const callbackUrl = `${window.location.origin}/secure`;
   return (
