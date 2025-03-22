@@ -11,13 +11,13 @@ export default defineConfig(({ mode }) => ({
               //target: "http://localhost:8081",
               target: "https://turva.siji.ng",
               changeOrigin: true,
-              secure: true,
+              secure: false,
             },
             "/auth": {
               //target: "http://localhost:8081",
               target: "https://turva.siji.ng",
               changeOrigin: true,
-              secure: true,
+              secure: false,
             },
           },
         }
