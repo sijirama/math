@@ -8,14 +8,14 @@ export default defineConfig(({ mode }) => ({
       ? {
           proxy: {
             "/api": {
-              target: "http://localhost:8081",
-              //target: "https://turva.siji.ng",
+              //target: "http://localhost:8081",
+              target: "https://turva.siji.ng",
               changeOrigin: true,
               secure: true,
             },
             "/auth": {
-              target: "http://localhost:8081",
-              //target: "https://turva.siji.ng",
+              //target: "http://localhost:8081",
+              target: "https://turva.siji.ng",
               changeOrigin: true,
               secure: true,
             },

@@ -31,7 +31,7 @@ const Login: React.FC = () => {
         </p>
         <div className="flex justify-center mb-4">
           <a
-            href={`/auth/google/authorize?provider=google&state=${encodeURIComponent(callbackUrl)}`}
+            href={`https://turva.siji.ng/auth/google/authorize?provider=google&state=${encodeURIComponent(callbackUrl)}`}
             className="flex items-center gap-3 rounded-md bg-white px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5">
