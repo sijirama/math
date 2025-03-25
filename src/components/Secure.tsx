@@ -15,7 +15,7 @@ const Secure: React.FC = () => {
 
   const fetchUserDetails = async () => {
     try {
-      const res = await fetch("/api/v1/user/me", {
+      const res = await fetch(`${import.meta.env.VITE_BASE_URL}/api/v1/user/me`, {
         credentials: "include",
       });
 
