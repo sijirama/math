@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Card from "./Card.tsx";
+import ConnectionStatus from "./ConnectionStatus.tsx";
 
 interface UserDetails {
   email: string;
@@ -23,7 +24,7 @@ const Secure: React.FC = () => {
       }
 
       const userData = await res.json();
-      console.log(userData);
+      console.log("USER DATA IS: ", userData);
       setUserDetails(userData);
     } catch (err) {
       console.error("Error fetching user:", err);
@@ -52,6 +53,7 @@ const Secure: React.FC = () => {
     <>
       {userDetails ? (
         <div className="flex flex-col items-center justify-center h-screen w-screen bg-gray-100 bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
+          <ConnectionStatus />
           <Card>
             <p>Welcome</p>
             <h1 className="text-gray-800 my-3 text-3xl font-semibold">{userDetails.id}</h1>
