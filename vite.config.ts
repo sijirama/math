@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const BASE_URL = process.env.VITE_BASE_URL || "http://localhost:8081";
+const BASE_URL = process.env.VITE_BASE_URL;
 
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
