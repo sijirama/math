@@ -1,4 +1,3 @@
-import React from "react";
 import { useSocket } from "use-socket-io-react";
 
 const ConnectionStatus = () => {
