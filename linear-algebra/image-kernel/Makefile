@@ -12,7 +12,7 @@ $(BIN): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 run: $(BIN)
-	./$(BIN)
+	@./$(BIN)
 
 clean:
 	rm -rf build
