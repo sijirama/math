@@ -1,6 +1,6 @@
-#include <iostream>  // include input/output stream
+#include <iostream> 
 
 int main() {
     std::cout << "Hello, Math Lab!" << std::endl;
-    return 0;  // exit success
+    return 0;
 }
